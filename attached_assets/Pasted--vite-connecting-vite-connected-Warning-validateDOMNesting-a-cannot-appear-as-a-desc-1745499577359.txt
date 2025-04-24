@@ -1,0 +1,35 @@
+[vite] connecting...
+[vite] connected.
+Warning: validateDOMNesting(...): <a> cannot appear as a descendant of &lt;a&gt;.
+    at a
+    at a
+    at https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=168e84b9:337:18
+    at div
+    at nav
+    at div
+    at header
+    at Navbar (https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/src/components/Navbar.tsx:30:22)
+    at Provider (https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-7SUNRGEF.js?v=e50d5928:38:15)
+    at TooltipProvider (https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=41704bbd:58:5)
+    at QueryClientProvider (https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=96e2b291:2805:3)
+    at App (https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/src/App.tsx?v=-9aU3_9Jl4Z7zgF6BQa_5:127:3)
+    at PresenceChild (https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/framer-motion.js?v=6074c506:121:24)
+    at AnimatePresence (https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/framer-motion.js?v=6074c506:210:26)
+at a
+at a
+at https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=168e84b9:337:18
+at div
+at nav
+at div
+at header
+at Navbar (https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/src/components/Navbar.tsx:30:22)
+at Provider (https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-7SUNRGEF.js?v=e50d5928:38:15)
+at TooltipProvider (https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=41704bbd:58:5)
+at QueryClientProvider (https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=96e2b291:2805:3)
+at App (https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/src/App.tsx?v=-9aU3_9Jl4Z7zgF6BQa_5:127:3)
+at PresenceChild (https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/framer-motion.js?v=6074c506:121:24)
+at AnimatePresence (https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/framer-motion.js?v=6074c506:210:26)
+at t.value (https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:17465)
+at new t (https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:12630)
+at t.value (https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:32766)
+at https://437c212c-565f-4913-9527-18c74fa85855-00-1l19405kwemxv.riker.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2:34400

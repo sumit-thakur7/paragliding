@@ -63,26 +63,24 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-6 items-center">
             {navLinks.map((link) => (
-              <Link key={link.href} href={link.href}>
-                <a className={cn(
-                  "nav-link font-medium transition-colors relative",
-                  location === link.href ? "text-secondary" : "text-dark hover:text-secondary"
-                )}>
-                  {link.label}
-                  <span className={cn(
-                    "absolute bottom-[-4px] left-0 w-0 h-0.5 bg-secondary transition-all duration-300",
-                    location === link.href && "w-full"
-                  )}></span>
-                </a>
+              <Link key={link.href} href={link.href} className={cn(
+                "nav-link font-medium transition-colors relative",
+                location === link.href ? "text-secondary" : "text-dark hover:text-secondary"
+              )}>
+                {link.label}
+                <span className={cn(
+                  "absolute bottom-[-4px] left-0 w-0 h-0.5 bg-secondary transition-all duration-300",
+                  location === link.href && "w-full"
+                )}></span>
               </Link>
             ))}
           </div>
 
           {/* Book Now Button (Desktop) */}
           <Link href="/booking" className="hidden md:block">
-            <Button className="px-6 py-2 bg-secondary text-white font-accent font-medium rounded-full hover:bg-secondary/90 transition">
+            <span className="px-6 py-2 bg-secondary text-white font-accent font-medium rounded-full hover:bg-secondary/90 transition inline-block">
               Book Now
-            </Button>
+            </span>
           </Link>
 
           {/* Mobile Menu */}
@@ -96,27 +94,26 @@ const Navbar = () => {
             <SheetContent side="right" className="w-[80%] sm:w-[350px] pt-12">
               <div className="flex flex-col space-y-4 mt-8">
                 {navLinks.map((link) => (
-                  <Link key={link.href} href={link.href}>
-                    <a
-                      className={cn(
-                        "py-2 px-4 font-medium rounded-md transition-colors",
-                        location === link.href
-                          ? "bg-secondary/10 text-secondary"
-                          : "hover:bg-gray-100"
-                      )}
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {link.label}
-                    </a>
-                  </Link>
-                ))}
-                <Link href="/booking">
-                  <Button 
-                    className="w-full mt-4 px-6 py-2 bg-secondary text-white font-accent font-medium rounded-full hover:bg-secondary/90 transition"
+                  <Link 
+                    key={link.href} 
+                    href={link.href}
+                    className={cn(
+                      "py-2 px-4 font-medium rounded-md transition-colors",
+                      location === link.href
+                        ? "bg-secondary/10 text-secondary"
+                        : "hover:bg-gray-100"
+                    )}
                     onClick={() => setIsOpen(false)}
                   >
-                    Book Now
-                  </Button>
+                    {link.label}
+                  </Link>
+                ))}
+                <Link 
+                  href="/booking" 
+                  onClick={() => setIsOpen(false)}
+                  className="w-full mt-4 px-6 py-2 bg-secondary text-white font-accent font-medium rounded-full hover:bg-secondary/90 transition text-center block"
+                >
+                  Book Now
                 </Link>
               </div>
             </SheetContent>
