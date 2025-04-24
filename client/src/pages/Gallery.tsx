@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import AnimatedSection from "@/components/AnimatedSection";
 import { useState } from "react";
 import { galleryData } from "@/data/galleryData";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { X } from "lucide-react";
 
 const Gallery = () => {
@@ -152,6 +152,7 @@ const Gallery = () => {
       {/* Image Lightbox */}
       <Dialog open={!!selectedImage} onOpenChange={() => setSelectedImage(null)}>
         <DialogContent className="max-w-5xl bg-transparent border-none shadow-none">
+          <DialogTitle className="sr-only">Gallery Image View</DialogTitle>
           <div className="relative">
             <button 
               onClick={() => setSelectedImage(null)}
