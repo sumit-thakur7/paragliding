@@ -4,7 +4,6 @@ import { motion, AnimatePresence } from "framer-motion";
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show button when page is scrolled down
   useEffect(() => {
     const toggleVisibility = () => {
       if (window.scrollY > 500) {
@@ -18,8 +17,7 @@ const ScrollToTop = () => {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-  // Scroll to top handler
-  const scrollToTop = () => {
+   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth"

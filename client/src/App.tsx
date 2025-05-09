@@ -9,6 +9,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 import NotFound from "@/pages/not-found";
+import CursorIcon from "./components/CursorIcon";
+
 
 // Lazy load pages for better performance
 const Home = lazy(() => import("@/pages/Home"));
@@ -67,6 +69,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <CursorIcon />
         <Navbar />
         <Router />
         <Footer />

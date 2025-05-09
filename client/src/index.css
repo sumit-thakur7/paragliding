@@ -3,49 +3,50 @@
 @tailwind utilities;
 
 :root {
-      --background: 120 61% 50%; /* Green background */
---foreground: 0 100% 50%; /* Red text */
---muted: 60 4.8% 95.9%;
---muted-foreground: 25 5.3% 44.7%;
---popover: 120 61% 50%;
---popover-foreground: 0 100% 50%;
---card: 120 61% 50%;
---card-foreground: 0 100% 50%;
---border: 20 5.9% 90%;
---input: 20 5.9% 90%;
---primary: 207 90% 54%;
---primary-foreground: 211 100% 99%;
---secondary: 0 100% 50%; /* Red */
---secondary-foreground: 0 0% 100%; /* White text for contrast */
---accent: 60 4.8% 95.9%;
---accent-foreground: 24 9.8% 10%;
---destructive: 0 84.2% 60.2%;
---destructive-foreground: 60 9.1% 97.8%;
---ring: 20 14.3% 4.1%;
---radius: 0.5rem;
-  }
-  .dark {
-      --background: 240 10% 3.9%;
---foreground: 0 0% 98%;
---muted: 240 3.7% 15.9%;
---muted-foreground: 240 5% 64.9%;
---popover: 240 10% 3.9%;
---popover-foreground: 0 0% 98%;
---card: 240 10% 3.9%;
---card-foreground: 0 0% 98%;
---border: 240 3.7% 15.9%;
---input: 240 3.7% 15.9%;
---primary: 207 90% 54%;
---primary-foreground: 211 100% 99%;
---secondary: 240 3.7% 15.9%;
---secondary-foreground: 0 0% 98%;
---accent: 240 3.7% 15.9%;
---accent-foreground: 0 0% 98%;
---destructive: 0 62.8% 30.6%;
---destructive-foreground: 0 0% 98%;
---ring: 240 4.9% 83.9%;
---radius: 0.5rem;
-  }
+  --background: #69c6e4; /* Sky blue */
+  --foreground: 0 0% 10%; /* Black text */
+  --muted: 200 40% 95%;
+  --muted-foreground: 220 15% 40%;
+  --popover: 210 80% 98%;
+  --popover-foreground: 0 0% 10%;
+  --card: 210 100% 97%;
+  --card-foreground: 0 0% 10%;
+  --border: 210 40% 90%;
+  --input: 210 40% 90%;
+  --primary: #69c6e4; /* Sky blue */
+  --primary-foreground: 0 0% 10%; /* Black */
+  --secondary: 42 95% 55%; /* Yellow */
+  --secondary-foreground: 0 0% 10%; /* Black text */
+  --accent: 142 60% 45%; /* Green */
+  --accent-foreground: 0 0% 10%; /* Black */
+  --destructive: 0 85% 60%;
+  --destructive-foreground: 0 0% 10%; /* Black */
+  --ring: 202 100% 45%;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background:#69c6e4;
+  --foreground: 210 20% 90%;
+  --muted: 220 20% 25%;
+  --muted-foreground: 220 15% 60%;
+  --popover: 220 20% 15%;
+  --popover-foreground: 210 20% 90%;
+  --card: 220 20% 15%;
+  --card-foreground: 210 20% 90%;
+  --border: 220 20% 25%;
+  --input: 220 20% 25%;
+  --primary: 202 100% 45%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 42 95% 55%;
+  --secondary-foreground: 220 20% 10%;
+  --accent: 142 60% 45%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 202 100% 45%;
+  --radius: 0.75rem;
+}
 
 @layer base {
   * {
@@ -57,13 +58,15 @@
   }
 }
 
-/* Custom color theme class */
-.red-green-theme {
-  background-color: #00a000; /* Green background */
-  color: #ff0000; /* Red text */
+.paragliding-theme {
+  background-color: #69c6e4;
+  color: #1a3b6d;
+  font-family: 'Poppins', sans-serif;
 }
 
 .bg-gradient {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1473442240208-9f0f5572acb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), 
+              url('https://images.unsplash.com/photo-1600674461803-d4940290581f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80');
+  background-size: cover;
+  background-position: center;
 }
-
