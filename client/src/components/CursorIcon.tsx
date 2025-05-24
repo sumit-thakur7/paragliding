@@ -50,6 +50,7 @@ export default function CursorIcon() {
         setIsSpinning(true);
       }, 2000);
     };
+    
 
     window.addEventListener("mousemove", moveHandler);
     return () => {
