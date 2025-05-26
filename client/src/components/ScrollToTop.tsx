@@ -11,6 +11,7 @@ const ScrollToTop = () => {
       } else {
         setIsVisible(false);
       }
+      
     };
 
     window.addEventListener("scroll", toggleVisibility);
