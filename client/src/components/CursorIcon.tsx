@@ -44,9 +44,6 @@ export default function CursorIcon() {
       prevPos.current = { x, y };
 
       setIsSpinning(false);
-
-
-      
       if (idleTimeout.current) clearTimeout(idleTimeout.current);
 
       idleTimeout.current = setTimeout(() => {
